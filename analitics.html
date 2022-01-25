@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mykhailetskyi</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="analitics.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top ">
+            <div class="header__top-inner container">
+                <div class="header__logo">
+                    <a class="header__logo-link" href="./index.html">NewsAnalyzer</a>
+                </div>
+                <nav class="header__menu">
+                    <li class="header__list-item">
+                        <a class="header__link-item font_family" href="index.html">Главная</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a class="header__link-item " href="#">О проекте</a>
+                    </li>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <ul class="bread-crums">
+                <li><a class="bread-crums__links font_family" href="index.html">Главная</a></li>
+                <li class="bread-crums__current-page font_family"> / Аналитика</li>
+            </ul>
+            <div class="topic-request">
+                <span class="topic-request__item">Вы спросили:</span>
+            </div>
+            <div class="counter-request">   
+                <span class="counter-request__counter-week font_family">Новостей за неделю: <span class="counter-week__count"></span></span>
+                <span class="counter-request__counter-heading font_family">Упоминаний в загаловках: <span class="counter-week__headline__count"></span></span>
+            </div>   
+        </div>
+        <div class="analytics">
+            <div class="container">
+                <h1 class="analytics__headline ">Аналитика по дням</h1>
+                <div class="analitics__top-content">
+                    <div class="analitics__date style_font font_family">
+                        Дата
+                        <div class="analitics__month style_font font_family">(август)</div>
+                    </div>
+                    <div class="analitics__counter style_font font_family">
+                        кол-во упоминаний
+                    </div>
+                </div>
+                <div class="analitics-days">
+
+                    <ul class="analitics-days__date"></ul>
+
+                    <div class="analitics-days__procent-line">
+
+                        <span class="analitics-days__procent-line-item font_family">0</span>
+                        <span class="analitics-days__procent-line-item font_family">25</span>
+                        <span class="analitics-days__procent-line-item font_family">50</span>
+                        <span class="analitics-days__procent-line-item font_family">75</span>
+                        <span class="analitics-days__procent-line-item font_family">100</span>
+
+                        <ul class="progress-bar"></ul>
+
+                        <span class="analitics-days__procent-line-item font_family">0</span>
+                        <span class="analitics-days__procent-line-item font_family">25</span>
+                        <span class="analitics-days__procent-line-item font_family">50</span>
+                        <span class="analitics-days__procent-line-item font_family">75</span>
+                        <span class="analitics-days__procent-line-item font_family">100</span>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer class="footer container footer__mobile">
+        <div class="footer__copyright font_family-roboto">
+            © 2021 Valencia
+        </div>
+        <ul class="footer__list">
+            <li class="footer__list-item">
+                <a href="" class="footer__link-item">Главная</a>
+            </li>
+            <li class="footer__list-item">
+                <a href="" class="footer__link-item">О проекте</a>
+            </li>
+            <li class="footer__list-item">
+                <a href="" class="footer__link-item">Valencia JS</a>
+            </li>
+        </ul>
+        <div class="footer__social-links">
+            <a class="footer__social-link-item" href="https://github.com/M-skyi"></a>
+            <a class="footer__social-link-item" href="https://www.facebook.com/profile.php?id=100006967621155"></a>
+        </div>
+    </footer>
+    <script type="module" src="./modules/analitice.js"></script>
+</body>
+
+</html>
