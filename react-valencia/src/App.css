@@ -1,0 +1,17 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --analytics-grey-color: #B6BCBF;
+    --analytics-black-color: #1A1B22;
+    --header-white-color: #FFFFFF;
+    --header-black-color: #B6BCBF;
+    
+ }
+
+
+ 

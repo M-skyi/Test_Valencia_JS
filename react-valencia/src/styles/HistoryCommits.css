@@ -1,0 +1,368 @@
+.history-commits-main{
+    height: 485px;
+    background: #F5F6F7;
+    position: relative;
+}
+
+.history-commits-top__headline{
+    font-size: 30px;
+    line-height: 40px;
+    margin: 72px 0px 64px 0px;
+    width: fit-content;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;
+    padding: 72px 0 64px 0;
+    margin: 0;
+
+}
+.history-commits-top{
+    display: flex;
+    justify-content: space-between;
+}
+.history-commits-top__link-item{
+    margin: 85px 0 73px 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #1A1B22;
+    background-image: url(../project_img/arrowLink.png);
+    background-repeat: no-repeat;
+    width: 170px;
+    height: 20px;
+    background-position: 160px 4px;
+    display: block;
+    cursor: pointer;
+}
+
+.history-slide__item{
+    max-width: 400px;
+    height: 288px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    display: block;
+}
+
+.history-slide{
+    width: 100%;
+    background: #F5F6F7;
+    height: 288px;
+}
+
+
+.slick-slide{
+    max-width: 400px;
+    margin: 0 8px 0 8px;
+}
+
+.history-slide::before {
+    content: "";
+    height: 288px;
+    width: 100px;
+    display: block;
+    position: absolute;
+    z-index: 999;
+    box-shadow: inset 106px 32px 51px -53px #f5f6f7;
+} 
+
+.history-slide::after {
+    content: "";
+    height: 288px;
+    width: 100px;
+    display: block;
+    position: absolute;
+    z-index: 999;
+    box-shadow: inset -50px 0px 41px 0px #f5f6f7;
+    right: 0px;
+    top: 0px;
+} 
+
+.history-slide__item{
+    text-decoration: none;
+    padding: 0 24px 0 24px;
+}
+
+.history-slide__date{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #B6BCBF;
+    padding: 24px 0 20px 0;
+
+}
+
+.history-slide__author{
+    display: flex;
+}
+
+.history-slide__img{
+    margin: 0 16px 16px 0;
+    height: 64px;
+    width: 64px;
+    border-radius: 100%;
+}
+
+.history-slide__name{
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    color: #1A1B22;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.history-slide__name-email{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.history-slide__email{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #1A1B22;
+    margin-top: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.history-slide__text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1A1B22;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.slick-prev:before,.slick-next:before{
+    display: none;
+}
+.rrr li button:before{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+}
+
+@media(min-width: 320px){
+    .history-commits-top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .history-commits-top__headline {
+        font-size: 30px;
+        line-height: 40px;
+        padding: 32px 105px 16px 16px;
+    }
+
+    .history-commits-main {
+        height: 568px;
+        background: #F5F6F7;
+    }
+
+    .history-commits-top__link-item {
+        display: block;
+        width: 288px;
+        height: 56px;
+        text-align: center;
+        line-height: 56px;
+        border: 1px solid #1A1B22;
+        border-radius: 80px;
+        background-image: none;
+        margin: 0 16px;
+        position: absolute;   
+        bottom: 20px;
+    }
+
+    .history-slide::before {
+        display: none;
+    }
+
+    .history-slide::after {
+        display: none;
+    }
+
+    .history-slide__item {
+        max-width: 288px;
+        height: 264px;
+        padding: 0 16px 0 16px;
+    } 
+
+    
+    .history-slide__name {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .slick-slide {
+        max-width: 288px;
+        margin: 0 4px 0 4px;
+    }
+
+    .slick-track{
+        padding-left: 16px;
+    }
+
+    .history-commits-top__link{
+        display: flex;
+        justify-content: center;
+    }
+
+    .slick-slider{
+        height: 264px;
+    }
+
+    .slick-dots li button:before {
+        padding-top: 16px;
+    }
+}
+
+@media(min-width: 768px){
+
+    .history-commits-top {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .history-commits-top__link-item{
+        border: none;
+        background-image: url(../project_img/arrowLink.png);
+        text-align: right;
+        padding-right: 21px;
+        background-position: 298px 21px;
+        margin: 0 1px; 
+    }
+
+    .history-commits-top__headline {
+        font-size: 30px;
+        line-height: 40px;
+        padding: 32px 50px 0 0;
+    }
+
+    .history-commits-top__link-item {
+        display: block;
+        width: 308px;
+        
+    }
+
+    .history-commits-top__link-item {
+        position: relative;
+    }
+
+    .history-commits-top__link {
+        padding-top: 45px;
+    }
+
+    .history-commits-top__headline {
+        padding: 32px 50px 32px 0;
+    }
+
+    .history-commits-main {
+        height: 476px;
+    }
+
+    .history-slide__item {
+        max-width: 336px;
+        height: 250px;
+        padding: 0 16px 0 16px;
+    }
+
+    .slick-track {
+        padding-left: 40px;
+    }
+
+    .slick-slider{
+        height: 242px;
+    }
+
+    .slick-dots li button:before {
+        padding-top: 27px;
+    }
+
+}
+
+@media(min-width: 1024px){
+    .slick-track {
+        padding-left: 0;
+    }
+}
+
+@media(min-width: 1440px){
+    .history-commits-top__headline {
+        font-size: 40px;
+        line-height: 46px;
+        padding: 72px 50px 64px 0;
+    }
+
+    .history-commits-main {
+        height: 607px;
+        background: #F5F6F7;
+    }
+
+    .history-commits-top__link-item {
+        margin: 69px 0 0 0;
+    }
+
+    .history-slide__item {
+        max-width: 400px;
+        height: 288px;
+        padding: 0 16px 0 16px;
+    }
+
+    .slick-slider{
+        height: 288px;
+    }
+
+    .slick-slide {
+        max-width: 400px;
+        margin: 0 4px 0 4px;
+    }
+
+    .history-slide__name {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .slick-dots li button:before {
+        padding-top: 48px;
+    }
+    
+    .history-commits-top__link {
+        padding-top: 20px;
+    }
+}
+
