@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@400;700&family=Source+Sans+Pro&display=swap');
+
+:root{
+  --text-black-color: #1A1B22;
+  --text-white-color: #FFFFFF;
+  --text-grey-color: #B6BCBF;
+  
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1440px;
+  margin: auto;
+}
+
+@media (min-width: 320px) {
+  .container {
+    width: 288px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 688px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 911px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+   width: 1232px;
+  }
+}
+
+
+/* slider global style */
+
+.slick-slide{
+  max-width: 400px;
+  margin: 0 8px 0 8px;
+}
+
+.slick-dots li {
+ top: 50px;
+}
+
+.slick-dots  {
+  max-width: 98%;
+ }
+
+.slick-prev:before, .slick-next:before {
+  display: none;
+}
+
+@media (min-width: 320px){
+  .slick-slide{
+    max-width: 288px;
+    margin: 0 4px 0 4px;
+  }
+}
+
+@media (min-width: 768px){
+  .slick-slide{
+    max-width: 336px;
+    margin: 0 4px 0 4px;
+  }
+
+  .slick-dots li {
+    top: 30px;
+   }
+}
+
+@media (min-width: 1024px){
+  .slick-slide{
+    max-width: 320px;
+    margin: 0 8px 0 8px;
+  }
+}
+
+@media (min-width: 1440px){
+  .slick-slide{
+    max-width: 400px;
+    margin: 0 8px 0 8px;
+  }
+}
+
+
+
+
+

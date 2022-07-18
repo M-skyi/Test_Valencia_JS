@@ -1,0 +1,373 @@
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftPart{
+    margin: 30px 0 26px 104px;
+}
+
+.rightPart{
+    margin: 30px 101px;
+}
+
+.links{
+    display: flex;
+}
+
+.logo{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--text-black-color);
+}
+
+.link{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--text-grey-color);
+    margin-left: 34px;
+}
+
+.activeLinkHome{
+    color: #fff;
+}
+
+.activeLinkAboutPr{
+   color: #000;
+}
+
+
+.active::after{
+    position: relative;
+    content: "";
+    width: 100%;
+    background-color: #fff;
+    height: 3px;
+    display: block;
+    top: 24px;
+}
+
+.activeAbout::after{
+   
+    background-color: #000;
+}
+
+.analyticHover:hover {
+    color: #000;
+}
+
+.headerWrapper{
+    background-image: url(../public/img/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.line{
+    background-color: rgba(196, 196, 196, 0.40);;
+    position: absolute;
+    border:1px;
+    height:2px; 
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.title{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 64px;
+    color: var(--text-white-color);
+    width: 608px;
+}
+
+.text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--text-white-color);
+    width: 570px;
+    padding: 32px 0 64px;
+}
+
+.search{
+    padding: 74px 0 0 417px;
+}
+
+.input{
+    background: #FFFFFF;
+    border: 1px solid #D1D2D6;
+    backdrop-filter: blur(8px);
+    border-radius: 100px;
+    width: 608px;
+    height: 64px;
+    outline: none;
+    border: none;
+    padding: 0 188px 0 24px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.wrapperInput{
+    width: fit-content;
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.btn{
+    position: absolute;
+    right: 0;
+    background: #2F71E5;
+    box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+    border-radius: 100px;
+    width: 168px;
+    height: 64px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--text-white-color);
+    border: none;
+    outline: none;
+}
+
+.headerAnalytic{
+       background-color: #fff;
+}
+
+.logoChanges{
+    color: var(--text-white-color);
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+
+@media (min-width: 320px) {
+    .headerWrapper{
+        background-image: url(../public/img/mobile-bg.png);
+        background-size: cover ;
+    }
+
+    .search{
+        padding:  0 ;
+    }
+
+    .input{
+        width: inherit;
+        height: 56px;
+        padding: 0 24px;
+    }
+
+    .btn{
+        width: inherit;
+        height: 56px;
+        position: relative;
+        margin-top: 16px;
+    }
+
+    .title{
+        font-size: 36px;
+        line-height: 40px;
+        width: auto;
+        padding-top: 30px;
+    }
+
+    .text{
+        font-size: 20px;
+        line-height: 26px;
+        width: auto;
+        padding: 56px 0 24px ;
+    }
+
+    .leftPart{
+        margin: 16px 0 ;
+    }
+
+    .rightPart{
+        margin: 16px 0 16px 0;
+    }
+
+    .link{
+        font-size: 16px;
+        margin-left: 11px;
+        width: max-content;
+    }
+
+    .logo{
+        font-size: 16px;
+    }
+
+    .active::after{
+        top: 15px;
+    }
+
+    .line{
+        top: 57px;
+    }
+
+    .wrapperInput{
+        padding-bottom: 32px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .headerWrapper{
+        background-image: url(../public/img/ipad-bg.png);
+        background-size: cover;
+    }
+
+    .logo{
+        font-size: 20px;
+    }
+
+    .leftPart{
+        margin: 22px 0 18px 0 ;
+    }
+
+    .link{
+        font-size: 18px;
+        margin-left: 34px;
+        width: max-content;
+    }
+
+    .rightPart{
+        margin: 22px 0 18px 0 ;
+    }
+
+    .line{
+        top: 66px;
+    }
+
+    .active::after{
+        top: 18px;
+    }
+
+    .title{
+        width: 385px;
+        padding-top: 40px;
+    }
+
+    .text{
+        font-size: 18px;
+        line-height: 24px;
+        width: 452px;
+        padding: 16px 0 24px ;
+    }
+
+    .search{
+        padding-left:  122px ;
+    }
+
+    .input{
+        width: 448px;
+        height: 56px;
+        padding: 0 196px 0 24px;
+    }
+
+    .btn{
+        width: 160px;
+        height: 56px;
+        position: absolute;
+        margin-top: 0;
+    }
+
+    .wrapperInput{
+        padding-bottom: 32px;
+        width: max-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .headerWrapper{
+        background-image: url(../public/img/bg.png);
+        background-size: cover ;
+    }
+
+    .leftPart{
+        margin: 30px 0 26px 0;
+    }
+
+    .rightPart{
+        margin: 30px 0 26px 0;
+    }
+
+    .line{
+        top: 83px;
+    }
+
+    .active::after{
+        top: 27px;
+    }
+
+    .title{
+        font-size: 60px;
+        line-height: 64px;
+        padding-top: 80px;
+    }
+    
+    .text{
+        font-size: 18px;
+        line-height: 24px;
+        padding: 32px 0 64px;
+    }
+
+    .search{
+        padding-left:  200px ;
+    }
+
+    .wrapperInput{
+        padding-bottom: 80px;
+    }
+
+    .input{
+        width: 608px;
+        height: 64px;
+        padding: 0 196px 0 24px;
+    }
+
+    .btn{
+        width: 168px;
+        height: 64px; 
+    }
+
+}
+
+@media (min-width: 1440px) {
+
+    .headerWrapper{
+        background-image: url(../public/img/bg.png);
+        background-size: cover;
+    }
+
+    .search{
+        padding-left:  360px ;
+    }
+}

@@ -1,0 +1,349 @@
+
+.commitsWrapper{
+    background: #F5F6F7;
+    padding-bottom: 136px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.headline{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 46px;
+    color: var(--text-black-color);
+    margin: 72px 0 64px 0;
+}
+
+.link{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    position: relative;
+}
+
+.rightPart{
+    padding: 85px 15px 73px 0;
+}
+
+.link::after{
+    content: url(..//public/img/arr.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -15px;
+    top: 0;
+    
+}
+
+.historySlider{
+    width: 100%;
+    background: #F5F6F7;
+    height: 288px;
+  }
+
+  .item{
+    max-width: 400px;
+    height: 288px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    display: block;
+    padding: 0 24px; 
+  }
+
+  .historySlider::before {
+    content: "";
+    height: 288px;
+    width: 100px;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    box-shadow: inset 106px 32px 51px -53px #f5f6f7;
+} 
+
+.historySlider::after {
+    content: "";
+    height: 288px;
+    width: 100px;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    box-shadow: inset -50px 0px 41px 0px #f5f6f7;
+    right: 0px;
+    top: 0px;
+} 
+
+.img{
+    border-radius: 100%;
+}
+
+.userProfile{
+    display: flex;
+}
+
+.date{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--text-grey-color);
+    padding: 24px 0 20px 0;
+}
+
+.nameEmail{
+    padding-left: 16px;
+}
+
+.name{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    color: var(--text-black-color);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    max-width: 320px;
+    display: -webkit-box;
+}
+
+.email{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--text-black-color);
+    margin-top: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 200px;
+}
+
+.text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--text-black-color);
+    margin-top: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.imgWrapper{
+    width: 64px;
+    height: 64px;
+    position: relative;
+}
+
+
+
+
+
+
+@media (min-width: 320px){
+
+    .historySlider::before {
+        display: none;
+    } 
+    
+    .historySlider::after {
+        display: none;
+    } 
+
+    .item{
+        max-width: 288px;
+        height: 264px;   
+        padding: 0 16px;
+    }
+
+    .historySlider{
+        padding-left: 16px;
+      }
+
+    .header{
+       flex-direction: column;
+       align-items: center;
+    }
+
+    .link{
+        width: 288px;
+        height: 55px;
+        border: 1px solid black;
+        text-align: center;
+        display: block;
+        line-height: 55px;
+        border-radius: 80px;
+    }
+
+    .link::after{
+        display: none;
+    }
+
+    .commitsWrapper{
+        padding-bottom: 0;
+        position: relative;
+        height: 575px;
+    }
+
+    .rightPart{
+        position: absolute;
+        bottom: 0;
+        padding: 0;
+        margin-bottom: 10%;
+    }
+
+    .headline{
+        margin: 32px 0 16px 0;
+        max-width: 400px;
+    }
+
+    .name{
+        font-size: 20px;
+        padding-left: 4px;
+        max-width: 225px;
+    }
+
+    .imgWrapper{
+        width: 48px;
+        height: 48px;
+    }
+
+    .nameEmail{
+        padding-left: 8px;
+    }
+
+    .email{
+        padding-left: 4px;
+    }
+
+    .date{
+        padding: 16px 0 11px 0;
+    }
+
+}
+
+@media (min-width: 768px){
+
+    .header{
+        flex-direction: row;
+        align-items: inherit;
+     }
+
+     .rightPart{
+        position: relative;
+    }
+
+    .link{
+        width: max-content;
+        height: max-content;
+        border: none;
+    }
+
+    .link::after{
+        display: block;
+        
+    }
+
+    .headline {
+        max-width: 405px;
+        font-size: 30px;
+        margin: 40px 0 32px 0;
+    }
+
+    .rightPart{
+        margin: 38px 16px 68px 0;
+        
+    }
+
+    .commitsWrapper{
+       height: fit-content;
+       padding-bottom: 70px;
+    }
+
+    .item{
+        max-width: 336px;
+        height: 242px;  
+        padding: 0 24px;
+    }
+
+    .historySlider{
+        height: fit-content;
+      }
+
+      .historySlider{
+        padding-left: 35px;
+      }
+
+      .date{
+        padding: 24px 0 16px 0;
+    }
+}
+
+@media (min-width: 1024px){
+
+    .commitsWrapper{
+        padding-bottom: 100px;
+     }
+
+     .historySlider{
+        padding-left: 0;
+      }
+
+      .historySlider::before {
+        display: block;
+    } 
+    
+    .historySlider::after {
+        display: block;
+    }
+
+    .item{
+        max-width: 320px;
+        height: 250px;   
+    }  
+    
+}
+
+@media (min-width: 1440px){
+    
+    .item{
+        max-width: 400px;
+        height: 288px;   
+    } 
+
+    .imgWrapper{
+        width: 64px;
+        height: 64px;
+    }
+
+    .name{
+        font-size: 26px;
+        padding-left: 0;
+        max-width: 320px;
+    }
+
+    .nameEmail{
+        padding-left: 16px;
+    }
+
+    .headline {
+        max-width: none;
+    }
+}
+
+ 

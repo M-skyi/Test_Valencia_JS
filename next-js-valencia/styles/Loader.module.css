@@ -1,0 +1,35 @@
+
+.loader{
+    display: flex;
+    align-items: center;
+    background: #F5F6F7;
+    flex-direction: column;
+}
+
+.text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--text-grey-color);
+    margin-top: 24px;
+    margin-bottom: 80px;
+}
+
+.circle{
+    background-image: url(../public/img/loader.png);
+    width: 74px;
+    height: 74px;
+    animation: circle .75s linear infinite ;
+    background-repeat: no-repeat;
+    margin-top: 80px;
+  }
+  
+  @keyframes circle {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+   
+   

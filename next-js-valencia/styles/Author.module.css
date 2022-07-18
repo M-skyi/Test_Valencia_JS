@@ -1,0 +1,139 @@
+.content{
+    display: flex;
+}
+
+.img{
+    border-radius: 1000px;
+    width: 464px;
+    height: 464px;
+    background-image: url(../public/img/authorImg.jpg);
+    background-size: cover;
+}
+
+.leftPart{
+    padding: 80px 56px 80px 0;
+}
+
+.headline{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 46px;
+    margin-top: 131px;  
+}
+
+.text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--text-black-color);
+    display: block;
+    max-width: 600px;
+}
+
+.textFirst{
+    margin-top: 24px;
+}
+
+.textSecond{
+    margin-top: 27px;
+}
+
+@media (min-width: 320px) {
+
+    .img{
+        width: 272px;
+        height: 272px;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+
+    .leftPart{
+        padding: 20px 0 0 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .headline{
+        margin-top: 24px;  
+    }
+
+    .textSecond{
+        margin-top: 10px;
+        margin-bottom: 64px;
+    }
+
+    .textFirst{
+        margin-top: 16px;
+    }
+
+}
+
+@media (min-width: 768px){
+
+    .content{
+        flex-direction: row;
+    }
+
+    .img{
+        width: 232px;
+        height: 232px;
+    }
+
+    .leftPart{
+        padding: 40px 32px 40px 0 ;
+        display: flex;
+        justify-content: center;
+    }
+
+    .headline{
+        font-size: 30px; 
+        margin-top: 42px;  
+    }
+
+    .textFirst{
+        margin-top: 16px;
+    }
+} 
+
+@media(min-width: 1024px){
+    .img{
+        width: 400px;
+        height: 400px;
+    }
+
+    .headline{
+        font-size: 40px; 
+        margin-top: 42px;  
+    }
+
+    .leftPart{
+        padding: 40px 60px 40px 40px ;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media(min-width: 1440px){
+    .img{
+        width: 464px;
+        height: 464px;
+    }
+
+    .headline{
+        font-size: 40px; 
+        margin-top: 131px;  
+    }
+
+    .textFirst{
+        margin-top: 24px;
+    }
+}
+    
+
+

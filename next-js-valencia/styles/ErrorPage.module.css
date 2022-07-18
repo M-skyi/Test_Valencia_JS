@@ -1,0 +1,16 @@
+.text{
+    display: flex;
+    align-items: center;
+    margin: 100px 70px;
+}
+
+.firstText{
+    border-right: 2px solid blue ;
+    padding-right: 7px;
+    color: var(--text-grey-color);
+    letter-spacing: 3px;
+}
+
+.secondText{
+    padding-left: 7px;
+}
